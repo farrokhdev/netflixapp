@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { colors, gradients, shadows } from "../../Variables";
 import { device } from "../../responsive";
-import { AiFillPlayCircle } from "react-icons/ai";
 
 // COMPONENTS
 export const BgImg = styled.div``;

@@ -9,6 +9,7 @@
 1. no admin panel dashboard and no backend
 2. no integrated with api's
 3. just local data for sample
+4. not mobile friendly
 
 ### dependencies
 

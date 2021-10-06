@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import netflixLogo from "../../images/logo/netflix-logo.png";
 import profileImg from "../../images/profile/1.jpg";
 import { VpnKey } from "@material-ui/icons";
@@ -22,7 +22,7 @@ export const Navbar = ({ isLogin, setIsLogin }) => {
   let splitPath = pathname.split("/");
   const targetPath = splitPath[splitPath.length - 1];
 
-  console.log(targetPath);
+  // console.log(targetPath);
 
   const { isScrolled } = useHomeContext();
 

@@ -29,7 +29,7 @@ export const List = ({ allMovies, genre, type }) => {
       setSlideList(true);
     }
     sliderRef.current.style.transform = "translateX(0px)";
-  }, [path]);
+  }, [path, type]);
 
   // FILTER MOVIES
   const moviesFiltByType = allMovies.filter((movie) => {
@@ -44,8 +44,6 @@ export const List = ({ allMovies, genre, type }) => {
     singleGenre = singleGenre.replace(" ", "");
     singleGenre = singleGenre.split(",");
     return singleGenre.includes(genre.toLowerCase());
-
-    return "";
   });
   // console.log(filtMovies.length - 1);
 

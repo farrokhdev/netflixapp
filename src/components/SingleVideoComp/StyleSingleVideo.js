@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, gradients, shadows } from "../../Variables";
+import { colors } from "../../Variables";
 import { device } from "../../responsive";
 
 // COMPONENTS

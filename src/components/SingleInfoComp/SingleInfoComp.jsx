@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   BgImg,
   Overlay,
@@ -42,6 +42,8 @@ export const SingleInfoComp = () => {
       move.title !== singleMovie[0].title
     ) {
       return move;
+    } else {
+      return "";
     }
   });
 

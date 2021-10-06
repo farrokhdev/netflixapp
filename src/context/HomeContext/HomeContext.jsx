@@ -1,43 +1,12 @@
-import React, { useContext, useState, useEffect } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 import { movies } from "../../datas";
 
 export const HomeContext = React.createContext();
 
-const url = "https://imdb-api.com/en/API/Top250Movies/pk_ym4fuc6c4u2mvc7fa";
-
 export const HomeProvider = ({ children }) => {
-  const [apiTrigged, setApiTrigged] = useState(true);
-  const [all250Movies, setall250Movies] = useState();
   const [allMovies, setAllmovies] = useState(movies);
-
-  // fetch data
-  // const fetchMovies = async () => {
-  //   try {
-  //     const response = await fetch(`${url}`);
-  //     console.log(response);
-  //     // pars to json
-  //     const result = await response.json();
-  //     console.log(result.items);
-  //     if (result.items) {
-  //       setall250Movies(result.items);
-  //     } else {
-  //       setall250Movies("there is no movie");
-  //     }
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-  // useEffect(() => {
-  //   if (!apiTrigged) {
-  //     // do nothing else
-  //     return;
-  //   } else {
-  //     // do somthing else
-  //     fetchMovies();
-  //   }
-  // }, [apiTrigged]);
 
   const [isScrolled, setIsScrolled] = useState(false);
 

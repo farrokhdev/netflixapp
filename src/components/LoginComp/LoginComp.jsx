@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useLocation, useHistory } from "react-router-dom";
+import React from "react";
+
 import { LoginForm } from "./LoginForm/LoginForm";
 import { LoginSec, Background, Overlay } from "./StyleLogin";
 import backImg from "../../images/register/background.jpg";

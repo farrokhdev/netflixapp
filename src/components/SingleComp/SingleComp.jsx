@@ -48,6 +48,8 @@ export const SingleComp = () => {
       move.title !== singleMovie[0].title
     ) {
       return move;
+    } else {
+      return "";
     }
   });
   // console.log(relatedMovies);
